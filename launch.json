@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (Cortex-Debug + OpenOCD + ST-Link)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/${workspaceFolderBasename}.elf",
+
+      "servertype": "openocd",
+      "interface": "swd",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f1x.cfg"
+      ],
+
+      "gdbPath": "C:/Users/Kübra Akşahin/Downloads/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gdb.exe",
+
+      "openOCDLaunchCommands": [
+        "gdb_port 3333",
+        "tcl_port 6666",
+        "telnet_port 4444",
+        "log_output openocd.log"
+      ],
+
+      "runToEntryPoint": "main"
+    } 
+  ]
+}
