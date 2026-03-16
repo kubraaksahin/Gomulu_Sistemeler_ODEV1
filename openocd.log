@@ -1,0 +1,9 @@
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 1000 kHz
+Info : STLINK V2J37S7 (API v2) VID:PID 0483:3748
+Info : Target voltage: 3.287759
+Warn : UNEXPECTED idcode: 0x2ba01477
+Error: expected 1 of 1: 0x1ba01477
+
+
